@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "coveringreworked",
+	"version": "${version}",
+	"name": "Covering Reworked",
+	"description": "A mod about changing the armors so YOU can create variety.",
+	"authors": [
+		"AzBeta"
+	],
+	"contact": {
+		"homepage": "https://github.com/4zBeta",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/coveringreworked/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.azbeta.coveringreworked.CoveringReworked"
+		],
+		"fabric-datagen": [
+			"net.azbeta.coveringreworked.CoveringReworkedDataGenerator"
+		],
+      "client": [
+        "net.azbeta.coveringreworked.CoveringReworkedClient"
+      ]
+    },
+	"mixins": [
+		"coveringreworked.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
